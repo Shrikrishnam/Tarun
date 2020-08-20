@@ -1,0 +1,56 @@
+  <div class="container-fluid bg-dark">
+    <div >
+      <img id="logo" src="../assets/images/logo2.png" alt="Logo">
+     
+     </div>
+</div>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark nav-fill w-100">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto ">
+        <li class="nav-item active ml-7"><a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item "><a class="nav-link" routerLink="place-fitness-trainer-appointment">Place App</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="view-appointment">View App</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="search">Search</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="contact-us">Contact</a></li>
+      </ul>
+     </div>
+ </nav>
+
+
+<div class="container-fluid pl-0  h-100" >
+  <div class="row h-100">
+    
+    <div class="m-0 col-sm-3 col-md-3">
+      
+      <ul class="sidenav bg-secondary">
+        <li>
+          <a class="" routerLink="/"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a class="" routerLink="place-fitness-trainer-appointment"><i class="fa fa-plus"></i> Place App</a>
+        </li>
+        <li>
+          <a class="" routerLink="view-appointment"><i class="fa fa-list"></i> View App</a>
+        </li>
+        <li>
+          <a class="" routerLink="search"><i class="fa fa-eye"></i>Search</a>
+        </li>
+        <li>
+          <a routerLink="contact-us"><i class="fa fa-envelope"  ></i> Contact</a>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="col-sm-9 col-md-9 h-100 p-0 m-0 ">
+      <br>
+      <router-outlet></router-outlet>
+      <br>
+      <br>
+      <br>
+      
+    </div>
+  </div>
+  <hr>
+</div>

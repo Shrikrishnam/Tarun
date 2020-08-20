@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="text-center text-primary display-3 texty">Appointments</div>
+    <br>
+    <div class="table-responsive table-striped table-bordered table-hover">
+      <table class="table">
+        <thead>
+            <tr>
+                <th class="h1" id="h1">Sl NO</th>
+                <th class="h2" id="h2">Name</th>
+                <th class="h3" id="h3">Address</th>
+                <th class="h4" id="h4">City</th>
+                <th class="h5" id="h5">Package</th>
+                <th class="h6" id="h6">Trainer Preference</th>
+                <th class="h7" id="h7">Phone</th>
+
+              </tr>
+        </thead>
+       
+        <tbody >
+          <tr *ngFor="let appointment of appointments; index as i">
+            <td>{{i+1}}</td>
+            <td>{{appointment.firstname}} {{appointment.lastname}}</td>
+            <td>{{appointment.streetaddress}}</td>
+            <td>{{appointment.city}}</td>
+            <td>{{appointment.packages}}</td>
+            <td>{{appointment.trainerpreference}}</td>
+            <td>{{appointment.phonenumber}}</td>
+            <td><button (click)="onUpdate(appointment)" class="btn btn-success"><i class="fa fa-pencil" aria-hidden="true"></i>Update</button></td>
+            <td><button (click)="onDelete(appointment)" class="btn btn-danger"><i class="fa fa-trash"></i>Delete</button></td>
+        </tr>
+         
+    
+    
+        </tbody>
